@@ -1,0 +1,133 @@
+body{
+margin: 10px 50px 10px 50px;
+/* background-image: linear-gradient(to bottom right, lightpink , white); */
+}
+p{
+  width: 60%;
+  color: gray;
+  font-size: 80%;
+}
+a{
+  text-decoration: none;
+}
+/* HEADER STYLING*/
+header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:50px;
+}
+.logo{
+  width: 200px;
+  background-color: rgb(252, 247, 251);
+  border-radius: 100%;
+}
+.right-content{
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+.right-content .button{
+  width: 100%;
+  height: 70%;
+}
+
+.button{
+  background-color: rgb(69, 82, 206);
+  border: none;
+  color: white;
+  padding:4px 10px;
+  border-radius: 6%;
+  font-size: 80%;
+}
+/*INTRODUCTION STYLING*/
+.intro-container{
+  display: flex;
+  margin-bottom: 10px;
+  background-image: linear-gradient(to bottom right,  rgb(254, 243, 245), white ); 
+}
+.introduction-part{
+  width: 70%;
+}
+.intro-image img{
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+}
+.introduction-part .button{
+margin-bottom: 15px;
+}
+.introduction-part P{
+  margin-top: 10px;
+}
+/*RESOURCES STYLING*/
+.resource-container{
+  display: flex;
+  flex: 1fr 1fr;
+  margin-bottom: 10px;
+}
+.resource-image img{
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+}
+/*PHONE STYLING*/
+.phone-container{
+  display: flex;
+  background-image: linear-gradient(to bottom right,  white, rgb(254, 243, 245) ); 
+}
+.phone-image{
+  width: 40%;
+}
+.phone-image img{
+  height: 280px;
+  width: 280px;
+  object-fit: contain;
+}
+.phone-text h2{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media screen and (max-width: 500px){
+  .logo{
+    display: block;
+    width: 100%;
+  }
+  .right-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .intro-container, .intro-image, .introduction-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .resource-container,.resource-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .phone-container, .phone-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .phone-text h2{
+    text-overflow: initial;
+    white-space: normal;
+  }
+}
